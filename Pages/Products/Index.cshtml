@@ -43,7 +43,8 @@
 						@Html.DisplayFor(modelItem => item.CategoryId)
 					</td>
 					<td>
-						<span></span>
+							<a asp-page="./Edit" asp-route-itemid="@item.Id" class="btn btn-warning">Edit</a>
+							<a asp-page="./Delete" asp-route-itemid="@item.Id" class="btn btn-danger">Delete</a>
 					</td>
 				</tr>
 
