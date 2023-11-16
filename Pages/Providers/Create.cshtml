@@ -13,8 +13,8 @@
 			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 			<div class="form-group">
 				<label asp-for="Providers.Name" class="control-label"></label>
-				<input asp-formaction="Category.Name" class="form-control" />
-				<span asp-validation-formaction="Category.Name" class="text-danger"></span>
+				<input asp-for="Providers.Name" class="form-control" />
+				<span asp-validation-for="Providers.Name" class="text-danger"></span>
 			</div>
 			<div class="form-group">
 				<label asp-for="Providers.ProductId" class="control-label"></label>

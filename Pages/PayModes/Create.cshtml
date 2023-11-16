@@ -13,8 +13,8 @@
 			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 			<div class="form-group">
 				<label asp-for="PayModes.Name" class="control-label"></label>
-				<input asp-formaction="PayModes.Name" class="form-control" />
-				<span asp-validation-formaction="PayModes.Name" class="text-danger"></span>
+				<input asp-for="PayModes.Name" class="form-control" />
+				<span asp-validation-for="PayModes.Name" class="text-danger"></span>
 			</div>
 			<div class="form-group">
 						<label asp-for="PayModes.Observation" class="control-label"></label>

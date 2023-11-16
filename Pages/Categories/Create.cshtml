@@ -13,13 +13,13 @@
 			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 			<div class="form-group">
 				<label asp-for="Category.Name" class="control-label"></label>
-				<input asp-formaction="Category.Name" class="form-control"/>
-				<span asp-validation-formaction="Category.Name" class="text-danger"></span>
+				<input asp-for="Category.Name" class="form-control"/>
+				<span asp-validation-for="Category.Name" class="text-danger"></span>
 			</div>
 			<div class="form-group">
 				<label asp-for="Category.Description" class="control-label"></label>
-				<input asp-formaction="Category.Description" class="form-control"/>
-				<span asp-validation-formaction="Category.Description" class="text-danger"></span>
+				<input asp-for="Category.Description" class="form-control"/>
+				<span asp-validation-for="Category.Description" class="text-danger"></span>
 			</div>
 			<div class="form-group mt-3">
 				<input type="submit" value="Create" class="btn btn-success"/>
