@@ -20,16 +20,16 @@ namespace SupermarketWEB.Pages.Products
 
         [BindProperty]
 
-        public Product Product { get; set; } = default!;
+        public Product Products { get; set; } = default!;
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid || _context.Products == null || Product == null) 
+            if (!ModelState.IsValid || _context.Products == null || Products == null) 
             {
                 return Page();
             }
 
-            _context.Products.Add(Product);
+            _context.Products.Add(Products);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
