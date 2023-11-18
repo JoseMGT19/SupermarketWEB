@@ -21,7 +21,7 @@ namespace SupermarketWEB.Pages.Categories
             {
                 return NotFound();
             }
-            var category = await _context.Categories.FirstOrDefaultAsync(m => m.Id == id);
+            var category = await _context.Categories.FindAsync(id);
             if (category != null)
             {
                 Category = category;

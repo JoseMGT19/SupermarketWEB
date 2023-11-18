@@ -24,7 +24,7 @@ namespace SupermarketWEB.Pages.PayModes
 			{
 				return NotFound();
 			}
-			var paymode = await _context.PayModes.FirstOrDefaultAsync(m => m.Id == id);
+			var paymode = await _context.PayModes.FindAsync(id);
 
 			if (paymode != null)
 			{

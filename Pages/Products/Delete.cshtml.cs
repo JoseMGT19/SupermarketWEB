@@ -24,7 +24,7 @@ namespace SupermarketWEB.Pages.Products
             {
                 return NotFound();
             }
-            var product = await _context.Products.FirstOrDefaultAsync(m => m.Id == id);
+            var product = await _context.Products.FindAsync(id);
 
             if (product != null)
             {

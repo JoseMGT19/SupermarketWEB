@@ -24,7 +24,7 @@ namespace SupermarketWEB.Pages.Providers
 			{
 				return NotFound();
 			}
-			var providers = await _context.Providers.FirstOrDefaultAsync(m => m.Id == id);
+			var providers = await _context.Providers.FindAsync(id);
 
 			if (providers != null)
 			{
